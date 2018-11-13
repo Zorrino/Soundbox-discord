@@ -19,9 +19,10 @@ bot.on('message', function (message){
 		}
 		 
 		else {
-			message.reply('Tu dois rejoindre un channel vocal d abord !');
+			message.reply("Tu dois rejoindre un channel vocal d'abord !");
 		}
 	}
+	
 	if (message.content == 'rako fucking'){
 		if (message.member.voiceChannel) {
 			message.member.voiceChannel.join()
@@ -32,7 +33,63 @@ bot.on('message', function (message){
 		}
 		 
 		else {
-			message.reply('Tu dois rejoindre un channel vocal d abord !');
+			message.reply("Tu dois rejoindre un channel vocal d'abord !");
+		}
+	}
+	
+	if (message.content == 'rako risitas'){
+		if (message.member.voiceChannel) {
+			message.member.voiceChannel.join()
+			broadcast.playFile('./risitas.mp3');
+			for (const connection of bot.voiceConnections.values()) {
+				connection.playBroadcast(broadcast);
+			}
+		}
+		 
+		else {
+			message.reply("Tu dois rejoindre un channel vocal d'abord !");
+		}
+	}
+	
+	if (message.content == 'rako shooting'){
+		if (message.member.voiceChannel) {
+			message.member.voiceChannel.join()
+			broadcast.playFile('./shooting.mp3');
+			for (const connection of bot.voiceConnections.values()) {
+				connection.playBroadcast(broadcast);
+			}
+		}
+		 
+		else {
+			message.reply("Tu dois rejoindre un channel vocal d'abord !");
+		}
+	}
+	
+	if (message.content == 'rako sale'){
+		if (message.member.voiceChannel) {
+			message.member.voiceChannel.join()
+			broadcast.playFile('./sale.mp3');
+			for (const connection of bot.voiceConnections.values()) {
+				connection.playBroadcast(broadcast);
+			}
+		}
+		 
+		else {
+			message.reply("Tu dois rejoindre un channel vocal d'abord !");
+		}
+	}
+	
+	if (message.content == 'rako perlinpinpin'){
+		if (message.member.voiceChannel) {
+			message.member.voiceChannel.join()
+			broadcast.playFile('./perlinpinpin.mp3');
+			for (const connection of bot.voiceConnections.values()) {
+				connection.playBroadcast(broadcast);
+			}
+		}
+		 
+		else {
+			message.reply("Tu dois rejoindre un channel vocal d'abord !");
 		}
 	}
 	
@@ -44,4 +101,4 @@ bot.on('message', function (message){
 		} 
 	})
 	
-bot.login(process.env.TOKEN)
+bot.login('MzA2NDUwMTE4MjgwODcxOTM2.Dst4Lw.wfEfgbBpGABax9c-BXFnexMGpwQ')
