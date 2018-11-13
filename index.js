@@ -4,7 +4,7 @@ const bot = new Discord.Client()
 const broadcast = bot.createVoiceBroadcast();
 
 bot.on('ready', function(){
-	bot.user.setGame('rako help for commands !');	
+	bot.user.setActivity('rako help for commands !');	
 })
 
 
