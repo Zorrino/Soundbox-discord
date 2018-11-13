@@ -409,4 +409,4 @@ bot.on('message', function (message){
 		} 
 	})
 	
-bot.login('MzA2NDUwMTE4MjgwODcxOTM2.Dst4Lw.wfEfgbBpGABax9c-BXFnexMGpwQ')
+bot.login('zzz')
