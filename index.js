@@ -135,23 +135,11 @@ bot.on('message', function (message){
 		}
 	}
 	
-	if (message.content == 'rako risitas'){
-		if (message.member.voiceChannel) {
-			message.member.voiceChannel.join()
-			broadcast.playFile('./risitas.mp3');
-			for (const connection of bot.voiceConnections.values()) {
-				connection.playBroadcast(broadcast);
-			}
-		}
-		 
-		else {
-			message.reply("Tu dois rejoindre un channel vocal d'abord !");
-		}
-	}
-	
 	if (message.content == 'rako thomas'){
 		if (message.member.voiceChannel) {
 			message.member.voiceChannel.join()
+			message.delete()
+			.then(msg => console.log(`Deleted message from ${msg.author.username}`))
 			broadcast.playFile('./thomas.mp3');
 			for (const connection of bot.voiceConnections.values()) {
 				connection.playBroadcast(broadcast);
@@ -409,4 +397,4 @@ bot.on('message', function (message){
 		} 
 	})
 	
-bot.login('zzz')
+bot.login('dont take my token lol ')
