@@ -389,6 +389,34 @@ bot.on('message', function (message){
 		}
 	}
 	
+	if (message.content == 'rako 1998'){
+		if (message.member.voiceChannel) {
+			message.member.voiceChannel.join()
+			broadcast.playFile('./1998.mp3');
+			for (const connection of bot.voiceConnections.values()) {
+				connection.playBroadcast(broadcast);
+			}
+		}
+		 
+		else {
+			message.reply("Tu dois rejoindre un channel vocal d'abord !");
+		}
+	}
+	
+	if (message.content == 'rako fat guy'){
+		if (message.member.voiceChannel) {
+			message.member.voiceChannel.join()
+			broadcast.playFile('./fatguy.mp3');
+			for (const connection of bot.voiceConnections.values()) {
+				connection.playBroadcast(broadcast);
+			}
+		}
+		 
+		else {
+			message.reply("Tu dois rejoindre un channel vocal d'abord !");
+		}
+	}
+	
 	if (message.content == 'rako leave'){
 		if (message.guild.voiceConnection) {
 			message.guild.voiceConnection.disconnect()
